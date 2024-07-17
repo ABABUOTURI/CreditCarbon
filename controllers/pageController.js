@@ -52,4 +52,8 @@ const KYC = async (req,res)=>{
     res.render('KYCGoverment')
 }
 
-module.exports = {homePage, dashboard,mark_co2,report_co2,all_emission,transparent,allowance,buy_token,sell_token,marketplace, KYC, quiz_reward}
+const buytoken = async (req,res)=>{
+    res.render('buytoken')
+}
+
+module.exports = {homePage, dashboard,mark_co2,report_co2,all_emission,transparent,allowance,buy_token,sell_token,marketplace, KYC, quiz_reward, buytoken}

@@ -12,7 +12,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #38c23a;
+    background:url(../img/auth_img.webp) top center no-repeat;
 }
 
 /* width */

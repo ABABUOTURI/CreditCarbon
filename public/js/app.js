@@ -751,7 +751,7 @@ App = {
         !listData[3] ? 'style="display: none;"' : ""
       }>
             <div class="box">
-              <img src="img/logo.png" class="img-fluid" alt="">
+              <img src="img/logo.jpg" class="img-fluid" alt="">
               <p style="font-size: 12px;">${listData[0]}</p>
               <p>Token Price: ${listData[2]}</p>
               <input type="hidden" id="listingId" value="${i}">
