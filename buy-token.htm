@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenChain Token Marketplace</title>
+    <link rel="stylesheet" href="buy.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/impact-co2.jpg" alt="GreenChain Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="marketplace.htm">Marketplace</a></li>
+                <li><a href="sell-token.htm">Sell Token</a></li>
+                <li><a href="buy-token.htm">Buy Token</a></li>
+                <li><a href="update-co2.htm">Update CO2 Emission</a></li>
+                <li><a href="industry-report.htm">Industry Report</a></li>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="token-marketplace">
+            <div class="token-card">
+                <img src="images/p2.png" alt="Token Image">
+                <p>0x84D475B58c8C8CAD54736c680D8BFBCB0A8...</p>
+                <h3>Token Price: 100000000000000000000 Wei</h3>
+                <button onclick="buyToken(20)">Buy 20 ECR</button>
+            </div>
+            <div class="token-card">
+                <img src="images/solutions-co2.jpg" alt="Token Image">
+                <p>0xE0ABf0f6e379F927d5fE0c0286F49bC85E...</p>
+                <h3>Token Price: 100000000000000000000 Wei</h3>
+                <button onclick="buyToken(5)">Buy 5 ECR</button>
+            </div>
+        </section>
+    </main>
+    <script src="buy.js"></script>
+</body>
+</html>

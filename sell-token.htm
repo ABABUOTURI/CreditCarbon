@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenChain Token Marketplace</title>
+    <link rel="stylesheet" href="sell.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/impact-co2.jpg" alt="GreenChain Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="marketplace.htm">Marketplace</a></li>
+                <li><a href="sell-token.htm">Sell Token</a></li>
+                <li><a href="buy-token.htm">Buy Token</a></li>
+                <li><a href="update-co2.htm">Update CO2 Emission</a></li>
+                <li><a href="industry-report.htm">Industry Report</a></li>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="token-info">
+            <h1>Current Token Price</h1>
+            <p>100000000000000000000 Wei</p>
+            <h2>Available Tokens</h2>
+            <p>997 GCT</p>
+        </section>
+        <section class="list-tokens">
+            <h2>List Tokens for Sale</h2>
+            <form id="list-token-form">
+                <input type="text" placeholder="Your Ethereum Address" required>
+                <input type="number" placeholder="Token Count" min="0" required>
+                <input type="number" placeholder="Your Token Price"  min="0" required>
+                <button type="submit">List Your Token</button>
+            </form>
+        </section>
+    </main>
+    <script src="sell.js"></script>
+</body>
+</html>

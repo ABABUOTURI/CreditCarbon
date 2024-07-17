@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industry Dashboard</title>
+    <link rel="stylesheet" href="industrydash.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="marketplace.htm">Marketplace</a>
+        <a href="sell-token.htm">Sell Token</a>
+        <a href="buy-token.htm">Buy Token</a>
+        <a href="update-co2.htm">Update CO2 Emission</a>
+        <a href="industry-report.htm">Industry Report</a>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#logout" class="logout">Logout</a>
+    </nav>
+    <div id="content">
+        <section id="marketplace">
+            <h2>Marketplace</h2>
+            <p>Token Price: <span id="tokenPrice">100 GCT</span></p>
+            <button onclick="buyToken(20)">Buy 20 ECR</button>
+            <button onclick="buyToken(5)">Buy 5 ECR</button>
+            <img src="images/impact-co2.jpg" class="floating-image" alt="Floating Image">
+        </section>
+
+    </div>
+
+    <script src="industrydash.js"></script>
+</body>
+</html>

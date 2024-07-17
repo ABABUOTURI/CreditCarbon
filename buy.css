@@ -1,0 +1,84 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: rgb(5, 101, 5);
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.token-marketplace {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.token-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.token-card img {
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.token-card p {
+    word-break: break-all;
+}
+
+.token-card h3 {
+    margin: 10px 0;
+}
+
+.token-card button {
+    background-color: rgb(5, 101, 5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.token-card button:hover {
+    background-color: rgb(5, 101, 5);
+}

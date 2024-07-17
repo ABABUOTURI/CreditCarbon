@@ -1,0 +1,79 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: rgb(5, 101, 5);
+    color: white;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.token-info {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.list-tokens {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.list-tokens form input, 
+.list-tokens form button {
+    display: block;
+    width: 80%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 35px;
+}
+
+.list-tokens form button {
+    background-color: rgb(5, 101, 5);
+    color: white;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+.list-tokens form button:hover {
+    background-color: rgb(5, 101, 5);
+}
