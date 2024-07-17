@@ -19,7 +19,7 @@ app.use('/',DashboardRoute)
 app.use('/auth',AuthRoute)
 app.use('/ipfs',IPFSRoute)
 
-PORT = 52332
+PORT = 5233
 app.listen(PORT, () => {
     console.log(`Server Listening on http://localhost:${PORT}/`);
 }).on("error", function(err) {
