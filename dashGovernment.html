@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government Dashboard</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <div class="sidebar-heading">Dashboard</div>
+            <div class="list-group list-group-flush">
+                <a href="#overview" class="list-group-item list-group-item-action">Overview</a>
+                <a href="#compliance" class="list-group-item list-group-item-action">Compliance</a>
+                <a href="#transactions" class="list-group-item list-group-item-action">Transactions</a>
+                <a href="#impact" class="list-group-item list-group-item-action">Impact</a>
+                <a href="#policy" class="list-group-item list-group-item-action">Policy Insights</a>
+                <a href="#reports" class="list-group-item list-group-item-action">Reports</a>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Profile</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="container-fluid">
+                <h1 class="mt-4">Government Dashboard</h1>
+
+                <!-- Overview Section -->
+                <div id="overview">
+                    <h2>Overview</h2>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <canvas id="overviewChart"></canvas>
+                        </div>
+                        <div class="col-lg-6">
+                            <p>Total Carbon Credits Traded: <span id="totalCredits">0</span></p>
+                            <p>Emission Reductions: <span id="emissionReductions">0</span></p>
+                            <p>Active Participants: <span id="activeParticipants">0</span></p>
+                            <p>Sector Breakdown: <span id="sectorBreakdown">0</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Compliance Section -->
+                <div id="compliance" class="mt-4">
+                    <h2>Compliance</h2>
+                    <canvas id="complianceChart"></canvas>
+                </div>
+
+                <!-- Transactions Section -->
+                <div id="transactions" class="mt-4">
+                    <h2>Transactions</h2>
+                    <canvas id="transactionsChart"></canvas>
+                </div>
+
+                <!-- Impact Section -->
+                <div id="impact" class="mt-4">
+                    <h2>Environmental Impact</h2>
+                    <canvas id="impactChart"></canvas>
+                </div>
+
+                <!-- Policy Insights Section -->
+                <div id="policy" class="mt-4">
+                    <h2>Policy and Regulation Insights</h2>
+                    <p>Latest updates and impact analysis on policies.</p>
+                </div>
+
+                <!-- Reports Section -->
+                <div id="reports" class="mt-4">
+                    <h2>Reports and Analytics</h2>
+                    <p>Generate and export custom reports.</p>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Bootstrap and JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-3d/dist/chartjs-plugin-3d.min.js"></script>
+    <script src="script1.js"></script>
+</body>
+</html>

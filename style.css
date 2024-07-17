@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,7 +8,6 @@ body {
 header {
     position: sticky;
     top: 0;
-    background-color: #333;
     z-index: 1000;
 }
 
@@ -34,12 +33,12 @@ header {
     text-decoration: none;
     padding: 15px 20px;
     font-weight: 300;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: block;
 }
 
 .navbar ul li a:hover {
     background-color: rgb(7, 131, 7);
+    color: #ddd;
 }
 
 main {
@@ -55,7 +54,7 @@ section {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/hero.jpg') no-repeat center center/cover;
     color: white;
     text-align: center;
-    height: 100vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -103,10 +102,129 @@ section {
     .content {
         flex-direction: column;
         text-align: center;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
     .content img {
         margin: 0 auto 20px;
     }
+}
+
+/*..............dashboard government..........*/
+/*body {
+    overflow-x: hidden;
+}*/
+
+#wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+#sidebar-wrapper {
+    background-color: rgb(7, 131, 7);
+    min-height: 100vh;
+    margin-left: -15rem;
+    transition: margin 0.25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+    color: white;
+}
+
+#sidebar-wrapper .list-group {
+    width: 15rem;
+}
+
+#sidebar-wrapper .list-group-item {
+    background-color: rgb(7, 131, 7);
+    color: white;
+}
+
+#sidebar-wrapper .list-group-item:hover {
+    background-color: rgb(5, 101, 5);
+}
+
+#page-content-wrapper {
+    min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+}
+
+@media (min-width: 768px) {
+    #sidebar-wrapper {
+        margin-left: 0;
+    }
+
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        margin-left: -15rem;
+    }
+}
+/*--------------------graph------------*/
+/* CSS for Charts */
+
+/* Ensure charts are responsive and fit within their containers */
+canvas {
+    max-width: 100%;
+    height: 330px;
+    margin: 0 auto; }/* Center align the chart */
+
+/* Additional styling for specific charts */
+/* Ensure charts are responsive and fit within their containers */
+
+/* Additional styling for specific charts */
+canvas#overviewChart {
+    max-width: 100%;
+    height: 200px; /* Adjust margin top as needed */
+}
+
+canvas#complianceChart,
+canvas#impactChart {
+     /* Adjust margin top as needed */
+    max-width: 60%;
+    /*height: 30px; /* Adjust height as needed for each chart */
+}
+
+/* Styling for chart sections */
+#overview,
+#compliance,
+#impact {
+    background-color: #f4f4f4;
+    border-bottom: 3px solid #ddd;
+    margin-bottom: 10px; /* Adjust margin bottom as needed */
+    /*padding: 10px; /* Adjust padding as needed */
+    text-align: center; /* Center align text content */
+    height: 300px;
+    width: 100%;
+}
+#transactions {
+    background-color: #f4f4f4;
+    border-bottom: 3px solid #ddd;
+    margin-bottom: 10px; /* Adjust margin bottom as needed */
+    padding: 10px; /* Adjust padding as needed */
+    text-align: center; /* Center align text content */
+    height: 300px;
+    width: 100%;
+}
+canvas#transactionsChart {
+     /* Adjust margin top as needed */
+    max-width: 100%;
+    padding: 15px; 
+    height: 200px; /* Adjust height as needed for each chart */
+}
+#overview h2,
+#compliance h2,
+#transactions h2,
+#impact h2{
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

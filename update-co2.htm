@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industry Dashboard</title>
+    <link rel="stylesheet" href="industrydash.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="marketplace.htm">Marketplace</a>
+        <a href="sell-token.htm">Sell Token</a>
+        <a href="buy-token.htm">Buy Token</a>
+        <a href="update-co2.htm">Update CO2 Emission</a>
+        <a href="industry-report.htm">Industry Report</a>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#logout" class="logout">Logout</a>
+    </nav>
+    <div id="content">
+        <section id="update-co2">
+            <h2>Update CO2 Emission</h2>
+            <form id="updateCo2Form">
+                <label for="generatedToken">Generated Token:</label>
+                <input type="text" id="generatedToken" name="generatedToken" required>
+                <label for="calendar">Date:</label>
+                <input type="date" id="calendar" name="calendar" required><br>
+                <label for="kemra">KEMRA:</label>
+                <input type="text" id="kemra" name="kemra" required>
+                <label for="co2Emission">Enter CO2 Emission (in ton):</label>
+                <input type="number" id="co2Emission" name="co2Emission" required>
+                <button type="submit" class="submit-button">Submit CO2 Emission</button>
+            </form>
+        </section>
+
+    </div>
+
+    <script src="industrydash.js"></script>
+</body>
+</html>
