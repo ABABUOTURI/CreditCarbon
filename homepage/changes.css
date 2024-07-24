@@ -1,0 +1,292 @@
+/* style.css */
+
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    background-color: #d3d8d7;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Header */
+.header {
+    background-color: #064635;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 50px;
+}
+
+.header .container-xl {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header .logo img {
+    height: 40px;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #ccc;
+}
+
+/* Login Button */
+.getstarted {
+    margin-left: auto; /* Pushes the login button to the far right */
+    background-color: black;
+    margin-top: 50%;
+    color: black;
+    color: forestgreen;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Mobile Nav Toggle */
+.bi-list {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: forestgreen;
+        position: absolute;
+        top: 60px; /* Adjust based on header height */
+        left: 0;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .navbar ul.show {
+        display: flex;
+    }
+
+    .bi-list {
+        display: block;
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+    }
+}
+
+/* Hero Section */
+#hero {
+    background: url('hero_background.jpg') center center no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+    color: white;
+    text-align: center;
+}
+
+#hero h1, #hero h2 {
+    color: white;
+}
+
+#hero .btn-get-started {
+    background: #064635;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+#hero .btn-get-started:hover {
+    background: #041b0b;
+}
+
+.section {
+    padding: 60px 0;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-header p {
+    font-size: 24px;
+    color: forestgreen;
+}
+
+/* About Section */
+.about .content {
+    background-color: #f9f9f9;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5%;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.about .content h2 {
+    color: forestgreen;
+}
+
+.about .content p {
+    margin: 15px 0;
+}
+
+.about img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Problem Section */
+#p-about .content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    color: forestgreen;
+}
+
+#p-about .content h2, #p-about .content p {
+    color: #333;
+}
+
+#p-about img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Values Section */
+.values .box {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: forestgreen;
+    margin-bottom: 5%;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.values .box h3 {
+    margin-top: 15px;
+    color: forestgreen;
+}
+
+/* Features Section */
+.features .feature-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.features .feature-box i {
+    font-size: 24px;
+    color: forestgreen;
+    margin-right: 15px;
+}
+
+.features .feature-box h3 {
+    color: #333;
+}
+
+/* Services Section */
+.services .service-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 3%;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.services .service-box i {
+    font-size: 40px;
+    color: forestgreen;
+    margin-bottom: 15px;
+}
+
+.services .service-box h3 {
+    margin-bottom: 15px;
+    color: forestgreen;
+}
+
+.services .service-box p {
+    color: #333;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background-color: #064635;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    display: none;
+}
+
+.back-to-top:hover {
+    background-color: #041b0b;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header {
+        height: auto;
+        padding: 10px 0;
+    }
+
+    #hero {
+        padding: 50px 0;
+    }
+
+    .about .content, .values .box, .services .service-box {
+        margin: 5% 2%;
+        padding: 30px;
+    }
+}
